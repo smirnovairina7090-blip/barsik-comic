@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>История Барсика — интерактивный комикс</title>
+  <meta name="theme-color" content="#fff0df">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="progress-wrap" aria-hidden="true">
+    <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+    <div class="progress-paw" id="progressPaw">🐾</div>
+  </div>
+
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo-cat">😾</span>
+      <div>
+        <strong>История Барсика</strong>
+        <small>методический бэкстейдж</small>
+      </div>
+    </div>
+    <nav class="quicknav">
+      <a href="#origin">Начало</a>
+      <a href="#why">Почему сработало</a>
+      <a href="#themes">Темы</a>
+      <a href="#finale">Финал</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="top">
+      <div class="hero-copy">
+        <div class="kicker">Информатика ЕГЭ/ОГЭ</div>
+        <h1><span class="title-top">Как Барсик</span><span class="title-bottom">захватил курс</span></h1>
+        <p class="lead">
+          Это история о том, как один толстый недовольный рыжий кот сначала был
+          маленькой шуткой между слайдами, а потом стал полноценным героем курса
+          информатики и эмоциональным проводником через весь учебный год.
+        </p>
+
+        <div class="chips">
+          <span>Ира Смирнова — методист</span>
+          <span>Серёжа Горбачев — преподаватель</span>
+        </div>
+
+        <div class="hero-actions">
+          <a class="btn primary" href="#origin">Открыть комикс</a>
+          <button class="btn ghost" id="heroJoke">Поговорить с Барсиком</button>
+        </div>
+
+        <div class="hero-note" id="heroNote">
+          Барсик уже заранее недоволен объёмом предстоящей подготовки.
+        </div>
+      </div>
+
+      <figure class="hero-art clean-card" id="tiltCard">
+        <img src="assets/hero.webp" alt="Ира, Сережа и Барсик за созданием комикса про Барсика">
+        <figcaption>Точка, в которой всё ещё выглядело как обычная идея для слайда.</figcaption>
+      </figure>
+    </section>
+
+    <section class="section section-cream" id="origin">
+      <header class="section-head">
+        <div class="num">01</div>
+        <div>
+          <div class="kicker">Как всё началось</div>
+          <h2>Сначала это была просто удачная шутка</h2>
+        </div>
+      </header>
+
+      <div class="story-grid">
+        <article class="text-card">
+          <p>
+            Всё началось с того, что я разбирала шаблоны презентаций. Среди них оказался
+            слайд с диалогами и готовыми мордочками персонажей. Там и сидел рыжий
+            кот с выражением лица человека, которому снова сказали: «Сейчас решим ещё
+            одну задачку, а потом еще одну и еще одну».
+          </p>
+          <p>
+            Рядом мы использовали Фокса — для контраста он был слишком собранный, слишком правильный,
+            вечно ко всему готовый. Барсик рядом с ним выглядел идеально:
+            он всё прошляпил, всё забыл, чуть-чуть драматизировал и морально уставал
+            ещё до начала работы.
+          </p>
+          <div class="callout">
+            <b>Почему это сразу сработало?</b>
+            <span>Потому что дети моментально узнают в Барсике собственное «я устал ещё до старта».</span>
+          </div>
+        </article>
+
+        <article class="comic-panel clean-card">
+          <img src="assets/meeting1.webp" alt="Ира, Сережа и Барсик обсуждают что-то важное">
+          <div class="speech s1 visible">Ира: А если добавить в курс персонажа?</div>
+          <div class="speech s2">Сережа: Главное — чтобы он был не просто очередным котиком.</div>
+          <div class="speech s3">Барсик: Отлично. Я буду недовольным.</div>
+
+          <div class="panel-controls">
+            <div class="dots" id="dialogDots"><i class="on"></i><i></i><i></i><i></i></div>
+            <button class="btn mini" id="nextDialog">Следующая реплика</button>
+          </div>
+        </article>
+      </div>
+
+      <div class="mini-comics">
+        <article class="mini-card clean-card">
+          <img src="assets/meeting_clean.webp" alt="Ира и Сережа обсуждают персонажа">
+          <div class="mini-copy">
+            <h3>Шутка стала повторяться</h3>
+            <p>Мы начали вставлять маленькие комикс-подводки перед темами и после тяжёлых блоков.</p>
+          </div>
+        </article>
+        <article class="mini-card clean-card">
+          <img src="assets/process_clean.webp" alt="Творческий рабочий процесс">
+          <div class="mini-copy">
+            <h3>Потом Барсик оброс историей</h3>
+            <p>У него появились характер, визуальные привычки и собственная маленькая драматургия.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-apricot" id="why">
+      <header class="section-head">
+        <div class="num">02</div>
+        <div>
+          <div class="kicker">Почему это вообще оказалось полезно</div>
+          <h2>Информатика — строгий предмет.</h2>
+      
+        </div>
+      </header>
+
+      <div class="why-grid">
+        <article class="image-card clean-card">
+          <img src="assets/strict.webp" alt="Перегруженный рабочий стол с Барсиком и задачами">
+          <div class="image-caption">
+            Когда предмет состоит из логики, алгоритмов, кучи кода и бесконечного программирования,
+            короткая визуальная передышка становится особенно ценной.
+          </div>
+        </article>
+
+        <article class="text-card large">
+	  <h4>Барсик добавил в неё юмористическое дыхание.</h4>
+          <p>
+            При длительной подготовке к ЕГЭ информатика постепенно превращается в очень плотный учебный процесс: 
+	    условия задач, алгоритмы, код, таблицы, вычисления, поиск ошибок и постоянная проверка результатов. 
+            Здесь особенно важна точность - ответ либо верный, либо нет, а даже небольшая ошибка может полностью изменить результат. 
+            Поэтому со временем накапливается не только интеллектуальная нагрузка, но и обычная эмоциональная усталость: от большого количества задач, 
+            концентрации и необходимости постоянно держать в голове множество деталей.
+          </p>
+          <p>
+            Персонаж типа Барсика не заменяет содержание. Он работает между кусками содержания.
+            Он может дать выдох, озвучить типичную боль ученика, снять напряжение перед новой темой,
+            сделать паузу смешной, а ещё связать весь курс в одну узнаваемую историю.
+          </p>
+          <p>
+            Самое важное: такой герой полезен не потому, что «милый». Он полезен, когда
+            у него есть функция. Поэтому Барсик у нас не просто сидел на слайде —
+            он комментировал, ворчал, подводил к теме, переодевался под материал и помогал
+            назвать состояние группы, не превращая вебинар в бесконечную серьёзную череду задач.
+          </p>
+        </article>
+      </div>
+
+      <div class="benefits-box">
+        <div class="benefit-tabs">
+          <button class="benefit-tab active" data-key="stress">Снимает напряжение</button>
+          <button class="benefit-tab" data-key="attention">Возвращает внимание</button>
+          <button class="benefit-tab" data-key="memory">Делает тему запоминающейся</button>
+          <button class="benefit-tab" data-key="voice">Говорит за ученика</button>
+          <button class="benefit-tab" data-key="arc">Собирает курс в историю</button>
+        </div>
+
+        <div class="benefit-view">
+          <div class="benefit-icon" id="benefitIcon">☁</div>
+          <div>
+            <h3 id="benefitTitle">Снимает напряжение</h3>
+            <p id="benefitText">
+              После тяжёлой задачи короткая шутка или визуальный мем дают группе маленький выдох.
+              Это не ломает учебный процесс, а наоборот помогает вернуться к следующему блоку с более живым вниманием.
+            </p>
+            <div class="benefit-note" id="benefitNote">
+              Лучше всего работает после интенсивной практики или перед новой сложной темой.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-row">
+        <button class="flip-card" data-flip>
+          <span class="front">Что важно помнить?</span>
+          <span class="back">Персонаж не должен спорить с содержанием за внимание. Он должен усиливать подачу.</span>
+        </button>
+        <button class="flip-card" data-flip>
+          <span class="front">Как не переборщить?</span>
+          <span class="back">Появляться редко, но метко. Тогда каждая шутка остаётся событием, а не фоном.</span>
+        </button>
+        <button class="flip-card" data-flip>
+          <span class="front">Почему именно Барсик?</span>
+          <span class="back">Потому что недовольство — очень понятная и честная эмоция при подготовке к экзамену.</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="section section-paper" id="stress">
+      <header class="section-head">
+        <div class="num">03</div>
+        <div>
+          <div class="kicker">Барсик в течение учебного года</div>
+          <h2>Недовольство постепенно росло и стало философией</h2>
+        </div>
+      </header>
+
+      <div class="mood-layout">
+        <article class="mood-main clean-card">
+          <img src="assets/moods.webp" alt="Пять состояний Барсика от скуки до ярости">
+          <div class="mood-caption">
+            В какой-то момент вопрос детей стал очень логичным:
+            <b>«А Барсик вообще когда-нибудь бывает довольным?»</b>
+          </div>
+        </article>
+
+        <div class="timeline">
+          <button class="month active" data-title="Сентябрь" data-text="Пока можно делать вид, что всё под контролем. Барсик ещё только знакомится с масштабом будущих страданий.">
+            <b>СЕН</b><span>Первые занятия</span>
+          </button>
+          <button class="month" data-title="Ноябрь" data-text="Темп растёт, тем становится больше, и Барсик начинает смотреть на жизнь с академическим сомнением.">
+            <b>НОЯ</b><span>Пошли серьёзные темы</span>
+          </button>
+          <button class="month" data-title="Январь" data-text="После каникул нужно снова включаться. Барсик против. Но всё равно идёт вместе с курсом.">
+            <b>ЯНВ</b><span>Возвращение в ритм</span>
+          </button>
+          <button class="month" data-title="Март" data-text="Подготовка ощущается физически. Барсик уже не просто недоволен — он профессионально возмущён происходящим.">
+            <b>МАР</b><span>Стресс нарастает</span>
+          </button>
+          <button class="month" data-title="Май" data-text="Недовольство доходит до состояния мировоззрения. Но именно поэтому он становится по-настоящему родным.">
+            <b>МАЙ</b><span>Финальная прямая</span>
+          </button>
+
+          <div class="timeline-box clean-card no-shadow">
+            <h3 id="monthTitle">Сентябрь</h3>
+            <p id="monthText">Пока можно делать вид, что всё под контролем. Барсик ещё только знакомится с масштабом будущих страданий.</p>
+          </div>
+
+          <button class="btn ghost wide" id="promiseBtn">Показать обещание Сережи</button>
+          <div class="promise-box" id="promiseBox">
+            Сережа придумал идеальный сюжетный крючок: довольным Барсик станет только
+            на последнем занятии перед экзаменом. Хочешь увидеть довольного Барсика —
+            значит, придётся дойти до самого конца курса.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-gold" id="themes">
+      <header class="section-head">
+        <div class="num">04</div>
+        <div>
+          <div class="kicker">Барсик подстраивается под содержание</div>
+          <h2>Персонаж перестал быть просто шуткой и стал визуальной метафорой темы</h2>
+        </div>
+      </header>
+
+      <div class="theme-box clean-card">
+        <div class="theme-stage">
+          <img id="themeImage" src="assets/theory.webp" alt="Барсик в теме теории игр">
+        </div>
+
+        <div class="theme-copy">
+          <div class="theme-nav">
+            <button class="theme-btn active" data-key="theory">Теория игр</button>
+            <button class="theme-btn" data-key="recursion">Рекурсия</button>
+            <button class="theme-btn" data-key="oracle">Предсказание программы</button>
+            <button class="theme-btn" data-key="counting">Подсчёты</button>
+          </div>
+
+          <h3 id="themeTitle">Теория игр</h3>
+          <p id="themeText">
+            Барсик надевает золотую цепь, садится как важный пузатый стратег и сразу превращает тему
+            в зрительный якорь: решения, ходы, преимущества, выбор действий. Мем становится
+            частью объяснения.
+          </p>
+          <div class="theme-note" id="themeNote">
+            Чем очевиднее связь образа и понятия, тем легче потом вернуться к теме через эту картинку.
+          </div>
+        </div>
+      </div>
+
+      <div class="recursion-lab clean-card">
+        <div class="lab-copy">
+          <div class="kicker">На будущее</div>
+          <h3>Хотим попробовать</h3>
+          <p>
+	    <h4>Хотим попробовать упрощать сложные понятия до простых мини-игр и внедрять в курс</h4>
+            Покажем пример. Нажимай функцию. Каждый вызов создаст ещё одного Барсика.
+            В какой-то момент это начнет выглядеть подозрительно похоже на настоящую рекурсию.
+          </p>
+          <div class="lab-actions">
+            <button class="barsik-btn" id="spawnBtn"><span>🐾</span><b>barsik()</b><small>вызвать ещё одного</small></button>
+            <button class="btn ghost" id="clearBtn">Остановить рекурсию</button>
+          </div>
+          <div class="lab-meter">
+            <div class="meter-track"><div class="meter-fill" id="meterFill"></div></div>
+            <span id="meterText">Барсиков: 0 / 24</span>
+          </div>
+        </div>
+        <div class="lab-field" id="catField">
+          <div class="lab-code">def barsik(): return barsik()</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-finale" id="finale">
+      <header class="section-head">
+        <div class="num">05</div>
+        <div>
+          <div class="kicker">Финал учебного года</div>
+          <h2>И Барсик наконец стал довольным. Но, конечно, по-своему.</h2>
+        </div>
+      </header>
+
+      <div class="final-grid">
+        <figure class="final-figure clean-card" id="finalFigure">
+          <div class="final-image-wrap">
+            <img id="finalImage" src="assets/finale.webp" alt="Праздничный довольный Барсик">
+            <div class="final-bubble" id="finalBubble">Я ДОЖИЛ.</div>
+          </div>
+          <figcaption>Редчайший биологический феномен: довольный Барсик.</figcaption>
+          <div class="final-actions">
+            <button class="btn primary" id="celebrateBtn">Сделать Барсика ещё довольнее</button>
+          </div>
+        </figure>
+
+        <article class="text-card large clean-card">
+          <p>
+            К концу учебного года дети действительно увидели довольного Барсика. Но он
+            не превратился в ангела или в идеального маскота. Он остался собой.
+          </p>
+          <p>
+            Он был счастлив от того, что можно наконец-то отпраздновать окончание всей этой
+            масштабной подготовки. А ещё — в нашей версии — был очень рад
+            устроить праздничный хаос вокруг учебных материалов.
+          </p>
+          <p>
+            В этом и был весь смысл: персонаж должен сохранять характер до конца.
+            Тогда финальная сцена ощущается не случайным приколом, а закономерной кульминацией.
+          </p>
+          <div class="final-text-actions">
+            <button class="btn mini" id="swapFinal">Альтернативный финал</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-method">
+      <header class="section-head">
+        <div class="num">06</div>
+        <div>
+          <div class="kicker">Методический вывод</div>
+          <h2>Персонаж курса — это не украшение. Это инструмент.</h2>
+        </div>
+      </header>
+
+      <div class="method-grid">
+        <article class="text-card large">
+          <p>
+            История Барсика показала очень важную вещь: даже в строгом техническом предмете, где
+            много формальных задач и мало пространства для творчесттва, можно
+            создать живую долгую историю, которая не мешает обучению, а помогает ему.
+          </p>
+          <p>
+            Хороший персонаж способен удерживать эмоциональный ритм курса, возвращать внимание,
+            создавать ассоциации, делать материал более человечным и объединять отдельные уроки
+            в единый узнаваемый маршрут. Особенно если курс длинный и ученики живут в нём месяцами.
+          </p>
+          <p>
+            Поэтому сейчас уже хочется придумывать такого героя осознанно: с характером,
+            визуальной эволюцией, повторяющимися шутками, сюжетной аркой и понятной методической функцией.
+          </p>
+        </article>
+
+        <div class="rules-grid">
+          <button class="rule-card" data-toast="У героя должна быть работа: вопрос, шутка, пауза или подводка.">
+            <b>01</b><span>Дайте герою функцию</span>
+          </button>
+          <button class="rule-card" data-toast="Одна сильная эмоция делает персонажа узнаваемым и устойчивым.">
+            <b>02</b><span>Закрепите характер</span>
+          </button>
+          <button class="rule-card" data-toast="Пусть герой появляется редко, но метко — так он остаётся событием.">
+            <b>03</b><span>Не переиспользуйте</span>
+          </button>
+          <button class="rule-card" data-toast="Связывайте образ с темой, а не просто украшайте слайд.">
+            <b>04</b><span>Привязывайте к содержанию</span>
+          </button>
+          <button class="rule-card" data-toast="Сюжетный крючок делает длинный курс более цельным и ожидаемым.">
+            <b>05</b><span>Думайте про арку</span>
+          </button>
+          <button class="rule-card" data-toast="Честная эмоция делает героя ближе детям, чем излишний идеализм.">
+            <b>06</b><span>Оставьте человечность</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="end-box clean-card">
+        <img src="assets/portrait.webp" alt="Барсик-портрет">
+        <div>
+          <div class="kicker">Следующий шаг</div>
+          <h3>Теперь хочется придумать нового героя курса уже специально</h3>
+          <p>
+            Не просто красивого персонажа, а того, кто сможет расти вместе с темами,
+            появляться в нужный момент, работать на подачу и помогать детям проходить
+            длинный путь курса не только умом, но и с эмоциональной поддержкой.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>Барсик всё ещё немного недоволен. И это прекрасно.</span>
+    <a href="#top">Наверх</a>
+  </footer>
+
+  <div class="fanfare-layer" id="fanfareLayer" aria-hidden="true">
+      <div class="fanfare-rays"></div>
+      <div class="fanfare-trumpet trumpet-left">📯</div>
+      <div class="fanfare-trumpet trumpet-right">📯</div>
+      <div class="fanfare-title">ТА-ДА-А-АМ!</div>
+      <div class="fanfare-subtitle">БАРСИК ДОВОЛЕН</div>
+      <div class="fanfare-stars" id="fanfareStars"></div>
+    </div>
+    <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
